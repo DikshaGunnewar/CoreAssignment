@@ -1,0 +1,17 @@
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.csprojAssemblyReference.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.csproj.CoreCompileInputs.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.RazorAssemblyInfo.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.RazorAssemblyInfo.cs
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.AssemblyInfoInputs.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.AssemblyInfo.cs
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\bin\Debug\netcoreapp2.2\CoreWeb.deps.json
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\bin\Debug\netcoreapp2.2\CoreWeb.runtimeconfig.json
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\bin\Debug\netcoreapp2.2\CoreWeb.runtimeconfig.dev.json
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\bin\Debug\netcoreapp2.2\CoreWeb.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\bin\Debug\netcoreapp2.2\CoreWeb.pdb
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\bin\Debug\netcoreapp2.2\CoreDataLayer.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\bin\Debug\netcoreapp2.2\CoreDataLayer.pdb
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.RazorTargetAssemblyInfo.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.csproj.CopyComplete
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreWeb\obj\Debug\netcoreapp2.2\CoreWeb.pdb

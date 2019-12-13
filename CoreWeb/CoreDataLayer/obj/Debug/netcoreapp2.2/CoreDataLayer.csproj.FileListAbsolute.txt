@@ -1,0 +1,11 @@
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\bin\Debug\netcoreapp2.2\CoreDataLayer.deps.json
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\bin\Debug\netcoreapp2.2\CoreDataLayer.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\bin\Debug\netcoreapp2.2\CoreDataLayer.pdb
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\obj\Debug\netcoreapp2.2\CoreDataLayer.csprojAssemblyReference.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\obj\Debug\netcoreapp2.2\CoreDataLayer.csproj.CoreCompileInputs.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\obj\Debug\netcoreapp2.2\CoreDataLayer.AssemblyInfoInputs.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\obj\Debug\netcoreapp2.2\CoreDataLayer.AssemblyInfo.cs
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\obj\Debug\netcoreapp2.2\CoreDataLayer.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\obj\Debug\netcoreapp2.2\CoreDataLayer.pdb
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\bin\Debug\netcoreapp2.2\CoreDataLayer.runtimeconfig.json
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreDataLayer\bin\Debug\netcoreapp2.2\CoreDataLayer.runtimeconfig.dev.json

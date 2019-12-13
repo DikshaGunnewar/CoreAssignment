@@ -1,0 +1,14 @@
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\bin\Debug\netcoreapp2.2\CoreRepository.deps.json
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\bin\Debug\netcoreapp2.2\CoreRepository.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\bin\Debug\netcoreapp2.2\CoreRepository.pdb
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\bin\Debug\netcoreapp2.2\CoreDataLayer.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\bin\Debug\netcoreapp2.2\CoreWeb.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\bin\Debug\netcoreapp2.2\CoreDataLayer.pdb
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\bin\Debug\netcoreapp2.2\CoreWeb.pdb
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\obj\Debug\netcoreapp2.2\CoreRepository.csprojAssemblyReference.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\obj\Debug\netcoreapp2.2\CoreRepository.csproj.CoreCompileInputs.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\obj\Debug\netcoreapp2.2\CoreRepository.AssemblyInfoInputs.cache
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\obj\Debug\netcoreapp2.2\CoreRepository.AssemblyInfo.cs
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\obj\Debug\netcoreapp2.2\CoreRepository.csproj.CopyComplete
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\obj\Debug\netcoreapp2.2\CoreRepository.dll
+C:\Users\dikshagunnewar\Source\Repos\CoreWeb\CoreRepository\obj\Debug\netcoreapp2.2\CoreRepository.pdb
