@@ -1,0 +1,14 @@
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.deps.json
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.runtimeconfig.json
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.runtimeconfig.dev.json
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.dll
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.pdb
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.csprojAssemblyReference.cache
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.csproj.CoreCompileInputs.cache
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.RazorAssemblyInfo.cache
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.RazorAssemblyInfo.cs
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.AssemblyInfoInputs.cache
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.AssemblyInfo.cs
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.RazorTargetAssemblyInfo.cache
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.dll
+C:\Users\vijaypandey\Desktop\.net core\SampleApp\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.pdb
