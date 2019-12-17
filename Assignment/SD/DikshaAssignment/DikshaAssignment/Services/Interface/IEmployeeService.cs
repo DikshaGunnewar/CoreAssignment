@@ -10,11 +10,11 @@ namespace DikshaAssignment.Services.Interface
     {
         IQueryable <Employee> GetAllEmployees();
 
-        Employee GetEmployeebyId(int id);
+        Employee GetEmployeebyId(int? id);
 
         Task AddEmployee(Employee model);
         Task UpdateEmployee(Employee model);
 
-        void DeleteEmployeebyId(int id);
+        void DeleteEmployeebyId(Employee employee);
     }
 }

@@ -16,18 +16,6 @@ namespace DikshaAssignment.Services.Service
             _employeeRepository = employeeRepository;
         }
 
-        public async Task AddEmployee(Employee model)
-        {
-            await _employeeRepository.Create(model);
-        }
-
-        public void DeleteEmployeebyId(int id)
-        {
-            Employee employee = new Employee();
-            employee.EmployeeId = id;
-            _employeeRepository.Delete(employee);
-
-        }
 
         public IQueryable<Employee> GetAllEmployees()
         {
@@ -35,15 +23,25 @@ namespace DikshaAssignment.Services.Service
             
         }
 
-        public Employee GetEmployeebyId(int id)
+        public Employee GetEmployeebyId(int? id)
         {
            return _employeeRepository.Get(id);
+        }
+
+        public async Task AddEmployee(Employee model)
+        {
+            await _employeeRepository.Create(model);
         }
 
         public async Task UpdateEmployee(Employee model)
         {
             await _employeeRepository.Update(model);
         }
+
         
+         public void DeleteEmployeebyId(Employee employee)
+        {
+            _employeeRepository.Delete(employee);
+        }
     }
 }

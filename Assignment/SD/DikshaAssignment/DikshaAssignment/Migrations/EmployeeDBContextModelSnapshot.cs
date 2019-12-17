@@ -49,10 +49,6 @@ namespace DikshaAssignment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<float>("Salary")
                         .HasColumnType("real");
 
@@ -62,6 +58,56 @@ namespace DikshaAssignment.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new
+                        {
+                            EmployeeId = 1,
+                            Address = "New York",
+                            CompanyName = "XYZ Inc",
+                            Designation = "Developer",
+                            EmailId = "john@yopmail.com",
+                            FirstName = "John",
+                            LastName = "Watson",
+                            Salary = 30000f,
+                            isActive = true
+                        },
+                        new
+                        {
+                            EmployeeId = 2,
+                            Address = "North America",
+                            CompanyName = "Test Inc",
+                            Designation = "QA",
+                            EmailId = "elena@yopmail.com",
+                            FirstName = "Elena",
+                            LastName = "Snowball",
+                            Salary = 50000f,
+                            isActive = true
+                        },
+                        new
+                        {
+                            EmployeeId = 3,
+                            Address = "South America",
+                            CompanyName = "ABC Inc",
+                            Designation = "Deveploer",
+                            EmailId = "tom@yopmail.com",
+                            FirstName = "Tom",
+                            LastName = "William",
+                            Salary = 40000f,
+                            isActive = true
+                        },
+                        new
+                        {
+                            EmployeeId = 4,
+                            Address = "London",
+                            CompanyName = "Lol Inc",
+                            Designation = "UI Developer",
+                            EmailId = "suzi@yopmail.com",
+                            FirstName = "Suzi",
+                            LastName = "Cook",
+                            Salary = 35000f,
+                            isActive = true
+                        });
                 });
 #pragma warning restore 612, 618
         }

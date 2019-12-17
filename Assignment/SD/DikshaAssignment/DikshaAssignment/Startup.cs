@@ -12,8 +12,10 @@ using Microsoft.Extensions.Configuration;
 using Swashbuckle.AspNetCore.Swagger;
 using DikshaAssignment.Models;
 using Microsoft.EntityFrameworkCore.SqlServer;
-
 using Microsoft.EntityFrameworkCore;
+using DikshaAssignment.Services.Interface;
+using DikshaAssignment.Services.Service;
+using DikshaAssignment.Repository;
 
 namespace DikshaAssignment
 {
@@ -29,48 +31,83 @@ namespace DikshaAssignment
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-             services.AddRazorPages();  // added for mvc razor pages
-             services.AddControllers(); // added for using controllers
+            // Added to resolve the service dependency injection problem
+             services.AddDbContext<EmployeeDBContext>(ServiceLifetime.Scoped);
+             
+                
+             services.AddControllers();
+            
+             //Added to set the version compatibility
+             // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+             services.AddMvc(option => option.EnableEndpointRouting = false);
+             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);    
+                            
+             //Registering interface and services
+             services.AddScoped(typeof(IEntityBaseRepository<>), typeof(EntityBaseRepository<>));
+             services.AddScoped<IEmployeeService, EmployeeService>();
 
-            //Added to set the version compatibility
-             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-             // added to connect to the db
+
+            // added to connect to the db
             //  services.AddDbContext<EmployeeDBContext>(item => item.UseSqlServer(Configuration.GetConnectionString("myConncectionString")));
             // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-            });
+            // services.AddSwaggerGen(c =>
+            // {
+            //     c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            // });
         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseStaticFiles(); //allowing to use static files
+
+            // if (env.IsDevelopment())
+            // {
+            //     app.UseDeveloperExceptionPage();
+            // }
+
+            // app.UseRouting();
+
+            // app.UseEndpoints(endpoints =>
+            // {
+            //     endpoints.MapGet("/", async context =>
+            //     {
+            //         await context.Response.WriteAsync("Hello World!");
+            //     });
+            // });
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("Employee");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
 
             app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
+          
+            app.UseMvc(routes =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Employee}/{action=Index}/{id?}");
             });
 
+           
            // Enabled the middleware to serve the generated swagger as a JSON endpoint 
-            app.UseSwagger();
+           // app.UseSwagger();
             
             // Enabled the middleware to serve the swagger UI using  (Htnl, Css, js..etc)
             // specifying the swagger endpoint
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "DikshaAssignment");
-            });
+            // app.UseSwaggerUI(c =>
+            // {
+            //     c.SwaggerEndpoint("/swagger/v1/swagger.json", "DikshaAssignment");
+            // });
         }
     }
 }
