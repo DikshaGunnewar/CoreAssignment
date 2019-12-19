@@ -50,14 +50,17 @@ namespace DikshaAssignment.Controllers.API
         /// <param name="id">id</param>
         /// <returns></returns>
         [HttpGet("GetstringById/id")]
-        public IActionResult GetstringById(int id)
+        public IActionResult GetstringById(int? id)
         {
             try {
+                if (id == null){
+                    return BadRequest();
+                }
                 Employee employee = _ientitybaserepository.Get(id);
     
                 if (employee == null)
                 {
-                    return NotFound("The Employee record couldn't be found.");
+                    return NotFound();
                 }
                 return Ok(employee);
                    
@@ -96,12 +99,12 @@ namespace DikshaAssignment.Controllers.API
         /// <param name="id">id</param>
         /// <param name="employee">employee</param>
         /// <returns></returns>
-        [HttpPost ("updateEmployee/id")]
-        public async Task<IActionResult> updateEmployee(int id, Employee employee)
+        [HttpPost ("UpdateEmployee/id")]
+        public async Task<IActionResult> UpdateEmployee(int? id, Employee employee)
         {
             if (id != employee.EmployeeId)
             {
-                return NotFound();
+                return BadRequest();
             }
 
             if (ModelState.IsValid)
@@ -114,22 +117,18 @@ namespace DikshaAssignment.Controllers.API
                 catch (Exception)
                 {  
                     var employeeExist = _ientitybaserepository.Get(employee.EmployeeId);
-                    if (employeeExist == null)
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        return StatusCode(500);
-                    }
+                        if (employeeExist == null)
+                        {
+                            return NotFound();
+                        } else
+                        {
+                            return StatusCode(500);
+                        }
                 }
                
             }
-            return NotFound();
+            return NoContent();
         }
-
-
-     
         /// <summary>
         /// To method is used to update the existing record.
         /// </summary>
@@ -157,9 +156,12 @@ namespace DikshaAssignment.Controllers.API
         /// This method is used to delete the record.
         /// </summary>
         /// <param name="id">id</param>
-        [HttpDelete("DeletestringById/id")]
-        public IActionResult DeletestringById(int? id)
+        [HttpDelete("DeleteEmployeeById/id")]
+        public IActionResult DeleteEmployeeById(int? id)
         {
+            if(id == null){
+                return BadRequest();
+            }
             try {
                 Employee employee = _ientitybaserepository.Get(id);
 

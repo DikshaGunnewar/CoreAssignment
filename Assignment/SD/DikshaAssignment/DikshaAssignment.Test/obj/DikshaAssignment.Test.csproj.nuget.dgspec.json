@@ -1,35 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj": {}
+    "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj": {}
   },
   "projects": {
-    "E:\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj": {
+    "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj",
+        "projectUniqueName": "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj",
         "projectName": "DikshaAssignment.Test",
-        "projectPath": "E:\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "E:\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\obj\\",
+        "projectPath": "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\DikshaAssignment.Test.csproj",
+        "packagesPath": "C:\\Users\\dikshagunnewar\\.nuget\\packages\\",
+        "outputPath": "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dikshagunnewar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {}
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment\\DikshaAssignment.csproj": {
+                "projectPath": "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment\\DikshaAssignment.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -39,8 +43,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[2.0.0, )"
@@ -77,7 +85,89 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment\\DikshaAssignment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment\\DikshaAssignment.csproj",
+        "projectName": "DikshaAssignment",
+        "projectPath": "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment\\DikshaAssignment.csproj",
+        "packagesPath": "C:\\Users\\dikshagunnewar\\.nuget\\packages\\",
+        "outputPath": "D:\\dotnetCore\\CoreAssignment\\Assignment\\SD\\DikshaAssignment\\DikshaAssignment\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dikshagunnewar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc2, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
