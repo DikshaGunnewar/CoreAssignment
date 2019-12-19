@@ -77,3 +77,8 @@ D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\appsettings.json
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\DikshaAssignment.deps.json
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\DikshaAssignment.runtimeconfig.json
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\PublishApp\web.config
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\PublishApp\appsettings.Development.json
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\PublishApp\appsettings.json
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\PublishApp\DikshaAssignment.deps.json
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishApp\PublishApp\PublishApp\DikshaAssignment.runtimeconfig.json
