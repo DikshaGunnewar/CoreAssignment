@@ -68,3 +68,7 @@ D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\obj
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\obj\Debug\netcoreapp3.0\Razor\Views\Employee\Create.cshtml.g.cs
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\obj\Debug\netcoreapp3.0\Razor\Views\Employee\Edit.cshtml.g.cs
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\obj\Debug\netcoreapp3.0\Razor\Views\Employee\Delete.cshtml.g.cs
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\obj\Debug\netcoreapp3.0\Razor\Views\Employee\Details.cshtml.g.cs

@@ -6,7 +6,9 @@ using DikshaAssignment.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DikshaAssignment.Controllers {
+
     public class EmployeeController : Controller {
+
         private readonly IEmployeeService _iemployeeservice;
 
         /// <summary>
@@ -16,34 +18,51 @@ namespace DikshaAssignment.Controllers {
             _iemployeeservice = iemployeeservice;
         }
 
+
+        /// <summary>
+        /// This method is used to display the all employee list.
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index () {
             var data = _iemployeeservice.GetAllEmployees ();
             return View (data);
         }
 
-        //    public async Task<IActionResult> Details(int? id)
-        //     {
-        //         if (id == null)
-        //         {
-        //             return NotFound();
-        //         }
 
-        //         var data = await _iemployeeservice.GetEmployeebyId(id);
+        /// <summary>
+        /// This method is used to get the details of employee
+        /// </summary>
+        /// <param name="id">id</param>
+        /// <returns></returns>
+        [HttpGet]
+        public IActionResult Details(int? id)
+        {
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-        //         if (data == null)
-        //         {
-        //             return NotFound();
-        //         }
+                var data =  _iemployeeservice.GetEmployeebyId(id);
 
-        //         return View(data);
-        //     }
+                if (data == null)
+                {
+                    return NotFound();
+                }
+
+                return View(data);
+         }
+
+         /// <summary>
+         /// This method is used to get the create view.
+         /// </summary>
+         /// <returns></returns>
         [HttpGet]
         public ActionResult Create () {
             return View ();
         }
 
         /// <summary>
-        /// This API is used to insert the record into db collection.
+        /// This method is used to insert the record into db collection.
         /// </summary>
         /// <param name="employee">Employee input model</param>
         /// <returns></returns>
@@ -73,19 +92,26 @@ namespace DikshaAssignment.Controllers {
         /// <returns></returns>
         [HttpGet]
         public ActionResult Edit (int? id) {
-
-            if (id == null)
-            {
-                return BadRequest("Invaild model passed");
+        try {
+              if (id == null)
+                {
+                  return BadRequest("Invaild model passed");
+                }
+                Employee employee = _iemployeeservice.GetEmployeebyId(id);
+                if (employee == null) {
+                        return NotFound();
+                }
+                return View(employee);
+            } catch (Exception) {
+                return StatusCode (500);
             }
-            Employee employee = _iemployeeservice.GetEmployeebyId(id);
-            if (employee == null) {
-                 return NotFound();
-            }
-            return View (employee);
-           
         }
 
+        /// <summary>
+        /// This method is used to edit the existing record.
+        /// </summary>
+        /// <param name="employee">employee</param>
+        /// <returns></returns>
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
         public async Task <ActionResult> Edit ([Bind] Employee employee) {
@@ -104,27 +130,26 @@ namespace DikshaAssignment.Controllers {
         /// <summary>
         /// To get the delete view
         /// </summary>
+        /// <param name="id">id</param>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult Delete (int? id) {
+           Employee employee = _iemployeeservice.GetEmployeebyId (id);
+             if (employee == null) {
+                return NotFound ();
+              }
+            return View (employee); 
+        }
+
+
+        /// <summary>
+        /// This method is used to delete the record.
+        /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        
-        // public ActionResult Delete (int? id) {
-        //     try {
-        //         Employee employee = _iemployeeservice.GetEmployeebyId (id);
-        //         if (employee == null) {
-        //             return NotFound ();
-        //         }
-        //         return View (employee);
-        //     } catch (Exception) {
-        //         return StatusCode (500);
-        //     }
-        // }
-
         [HttpPost, ActionName ("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete (int? id) {
-            if (id == null) {
-                    return BadRequest ("Invalid data model passed");
-              }
+        public ActionResult Delete (int id) {
             try {
                 Employee employee = _iemployeeservice.GetEmployeebyId(id);
 
@@ -137,6 +162,7 @@ namespace DikshaAssignment.Controllers {
                 return StatusCode (500);
             }
         }
+        
     }
 
 }

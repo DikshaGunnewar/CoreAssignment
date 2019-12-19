@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace DikshaAssignment.Repository {
+    
     public interface IEntityBaseRepository<T> {
      
         /// <summary>
@@ -49,6 +50,9 @@ namespace DikshaAssignment.Repository {
         /// <returns></returns>
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);
 
+        /// <summary>
+        /// To save the changes into db.
+        /// </summary>
         void SaveChanges();
     }
 }

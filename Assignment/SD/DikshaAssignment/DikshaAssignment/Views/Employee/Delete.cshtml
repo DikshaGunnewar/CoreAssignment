@@ -5,13 +5,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Delete</h2>
+<h2>Delete Record</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Movie</h4>
-    <hr />
-    <dl class="dl-horizontal">
+    @* <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
@@ -33,11 +31,11 @@
         <dt>
             @Html.DisplayNameFor(model => model.Salary)
         </dt>
-    </dl>
+    </dl> *@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="EmployeeId" />
-        <input type="submit" value="Delete" class="btn btn-success" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-outline-secondary">Back</a>
     </form>
-</div>
+</div> 
