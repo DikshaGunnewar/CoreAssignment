@@ -82,13 +82,6 @@ namespace DikshaAssignment
                     name: "default",
                     template: "{controller=Employee}/{action=Index}/{id?}");
             });
-
-
-            // app.UseEndpoints(endpoints =>
-            // {
-            //     endpoints.MapRazorPages();
-            // });
-
            
            // Enabled the middleware to serve the generated swagger as a JSON endpoint 
            app.UseSwagger();

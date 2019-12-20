@@ -127,15 +127,6 @@ namespace DikshaAssignment.Users
             var result = (StatusCodeResult)controller.GetstringById(1);
             Assert.AreEqual(500, result.StatusCode);
         }
-
-        // [TestMethod]
-        // public void GetEmployeesby_BadRequest()
-        // {
-        //     UserController controller = new UserController(_repoObj.Object);
-        //     _repoObj.Setup(a => a.Get(null));
-        //     var result = (BadRequestObjectResult)controller.GetstringById(null);
-        //     Assert.AreEqual(400, result.StatusCode);
-        // }
       
 #endregion
       

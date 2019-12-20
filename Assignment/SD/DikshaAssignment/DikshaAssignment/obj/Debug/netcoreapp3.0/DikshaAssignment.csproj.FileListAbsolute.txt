@@ -67,3 +67,8 @@ D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\obj\Debug\netcoreapp3.0\Razor\Views\Employee\Details.cshtml.g.cs
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishAppFiles\web.config
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishAppFiles\appsettings.Development.json
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishAppFiles\appsettings.json
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishAppFiles\DikshaAssignment.deps.json
+D:\dotnetCore\CoreAssignment\Assignment\SD\DikshaAssignment\DikshaAssignment\bin\Debug\netcoreapp3.0\PublishAppFiles\DikshaAssignment.runtimeconfig.json
