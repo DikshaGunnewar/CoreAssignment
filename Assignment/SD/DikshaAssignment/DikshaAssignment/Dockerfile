@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.0 AS build
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
-COPY *.sln .
+COPY *DikshaAssignment.sln .
 COPY DikshaAssignment/*.csproj ./DikshaAssignment/
 RUN dotnet restore
 
