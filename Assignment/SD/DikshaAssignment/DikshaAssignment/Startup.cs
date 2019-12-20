@@ -70,7 +70,8 @@ namespace DikshaAssignment
             }
             else
             {
-                app.UseExceptionHandler("Employee");
+                app.UseExceptionHandler("/Employee/Index");
+                app.UseHsts();
             }
 
             app.UseRouting();
